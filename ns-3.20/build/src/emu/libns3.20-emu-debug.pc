@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=/usr/local/lib
+includedir=/usr/local/include/ns3.20
+
+Name: libns3-emu
+Description: ns-3 module ns3-emu
+Version: 3.20
+Libs: -L${libdir} -Wl,-Bdynamic -lns3.20-emu-debug
+Cflags: -I${includedir}
+Requires: libns3.20-network-debug
